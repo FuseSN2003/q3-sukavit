@@ -1,0 +1,42 @@
+.navigation-menu > a > li {
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+.product-table > thead > tr > th {
+  border: 1px solid slategray;
+  padding: 1rem;
+}
+.product-table > tbody > tr > td {
+  border: 1px solid slategray;
+  padding: 1rem;
+}
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    input, textarea {
+      width: 250px;
+    }
+  }
+}
+
+.orders > .order-detail {
+  overflow: auto;
+  transition: all 150ms ease-in-out;
+}
+
+.orders[data-state="close"] > .order-detail {
+  max-height: 0;  
+}
+
+.orders[data-state="open"] > .order-detail {
+  max-height: 150px;  
+}
+
